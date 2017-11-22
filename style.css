@@ -2246,8 +2246,9 @@ font-family: 'Exo 2';
   font-size: 15px;
   color: #000;
   line-height: 20px;
-  height: 38px;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 63px;
+  display: inline-block; }
 
 .products-item-price {
   padding: 20px 0px 20px 0px; }
@@ -2678,11 +2679,11 @@ font-family: 'Exo 2';
   font-size: 15px;
   font-weight: 300;
   width: 100%; }
-  .input.err {
-    border: 1px solid red; }
   .input.focus {
     border: 1px solid #d0eaf2;
     background-color: #f8f8f8; }
+  .input.err {
+    border: 1px solid red !important; }
 
 textarea.input {
   resize: none;
@@ -2718,6 +2719,8 @@ textarea.input {
   .check.filter.active:before {
     border: 1px solid #00aeef;
     background: #00aeef url("../img/icons/check-white.svg") 1px 2px no-repeat; }
+  .check.err:before {
+    border: 1px solid red; }
 
 @media (max-width: 650px) {
   .form-column {
@@ -2856,71 +2859,3 @@ font-family: 'Exo 2';
 @extend .fr;
 @include anim(0.3s);
 */
-
-
-
-
-
-/*No sass*/
-
-.clearfix{
-  overflow: hidden;
-}
-
-.clearfix:before{
-  content: '';
-  font-size: 0;
-  clear: both;
-}
-
-.product__price{
-  float: left;
-}
-
-.product__price__block .product__price.sale{
-  color: #ff470f;
-}
-
-.products-price__oldvalue{
-  font-size: 21px;
-  line-height: 29px;
-  display: inline-block;
-  color: #727272;
-  text-decoration: line-through;
-  margin-left: 15px;
-  position: relative;
-  bottom: -3px;
-}
-
-.product-wrapper-main-img{
-  display: inline-block;
-  position: relative;
-}
-
-.product-images{
-  position: relative;
-}
-
-.products-item-labels__item.hit{
-  background:#fde117;
-}
-
-.product-info__stock.empty{
-  color: #ff0000;
-  padding-left: 18px;
-  background-image: url(../img/icons/empty-status.png);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: 13px 13px;
-
-}
-
-.product-info__stock.with-order{
-  color: #fde117;
-  padding-left: 20px;
-  background-image: url(../img/icons/time-status.png);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: 14px 14px;
-}
-
